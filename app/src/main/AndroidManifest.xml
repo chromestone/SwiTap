@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gmail.absolutevanillahelp.switap">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/st_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SwiTapActivity"
+            android:label="@string/multiplayer_game" />
+        <activity
+            android:name=".SinglePlayerActivity"
+            android:label="@string/single_player_game" />
+        <activity
+            android:name=".SwiTapLauncher"
+            android:label="@string/title_activity_switap_launcher" />
+        <activity
+            android:name=".SinglePlayerLauncher"
+            android:label="@string/title_activity_single_player_launcher" />
+        <activity
+            android:name=".HighscoreActivity"
+            android:label="@string/highscores"/>
+        <activity android:name=".GameOverActivity"
+            android:label="@string/game_over"/>
+    </application>
+
+</manifest>

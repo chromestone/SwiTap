@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#ff000000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/multiplayer"
+            android:id="@+id/multiplayer_label"
+            android:textColor="#ff0064ff"
+            android:textSize="@dimen/abc_text_size_display_3_material"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/time_limit"
+            android:id="@+id/time_limit_label"
+            android:layout_below="@+id/multiplayer_label"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textColor="#ffffffff" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#ff2b2b2b"
+            android:layout_weight="2">
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/spinner1"
+                android:layout_weight="9"/>
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/spinner2"
+                android:layout_weight="9" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Display3"
+                android:text="@string/colon"
+                android:id="@+id/colon_label"
+                android:layout_weight="4"
+                android:textColor="#ffffffff"
+                android:gravity="center"/>
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/spinner3"
+                android:layout_weight="9" />
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/spinner4"
+                android:layout_weight="9" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:layout_marginTop="10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/name1"
+                android:id="@+id/player1_editText_label"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:labelFor="@+id/player1_editText"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/player1_editText"
+                android:layout_below="@+id/player1_editText_label"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:inputType="text"
+                android:background="#ff282828"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColor="#ff0082ff"
+                android:text="@string/player1"
+                android:gravity="center"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/name2"
+                android:id="@+id/player2_editText_label"
+                android:layout_below="@+id/player1_editText"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:layout_marginTop="10dp"
+                android:labelFor="@+id/player2_editText"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/player2_editText"
+                android:layout_below="@+id/player2_editText_label"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:inputType="text"
+                android:background="#ff282828"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColor="#ff0082ff"
+                android:text="@string/player2"
+                android:gravity="center"
+                android:singleLine="true" />
+
+            <LinearLayout
+                style="?android:attr/buttonBarStyle"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/player2_editText"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true">
+
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cancel_button"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#ff282828"
+                    android:textColor="#ffffffff"
+                    android:text="@string/back"
+                    android:layout_gravity="bottom" />
+
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffffff"
+                    android:background="#ff0000ff"
+                    android:text="@string/go"
+                    android:id="@+id/go_button"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_gravity="bottom" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

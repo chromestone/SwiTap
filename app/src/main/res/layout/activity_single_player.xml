@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#ff000000">
+
+    <com.gmail.absolutevanillahelp.switap.VerticalProgressBar
+        android:id="@+id/time_bar"
+        android:progressDrawable="@drawable/green_vertical"
+        android:layout_height="fill_parent" android:layout_width="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/time_bar">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:text="@string/menu"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:id="@+id/single_player_menuView" >
+
+        </TextView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center"
+                android:textColor="#ff00e6a5"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                android:id="@+id/single_player_notify">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/score"
+                android:gravity="center_vertical|end"
+                android:textColor="#00ffff"
+                android:paddingStart="0dp"
+                android:paddingEnd="10dp" >
+
+            </TextView>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:text="@string/zero"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="end"
+            android:textColor="#00ffff"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:id="@+id/score_label">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/single_player_touch_view"
+            android:layout_weight="75"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="@string/touch_here"
+            android:textColor="#ff0082ff"
+            android:background="#ff282828"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

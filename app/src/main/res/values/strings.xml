@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">SwiTap</string>
+    <string name="multiplayer_game">Multiplayer Game</string>
+    <string name="single_player_game">Single Player Game</string>
+    <string name="time_limit">Time Limit:</string>
+    <string name="default_time">00:30</string>
+    <string name="change">Change</string>
+    <string name="tap_to_change">Tap to\nchange</string>
+    <string name="player1">Player 1</string>
+    <string name="player2">Player 2</string>
+    <string name="name1">Player 1 Name:</string>
+    <string name="name2">Player 2 Name:</string>
+    <string name="single_player_mode">Single Player</string>
+    <string name="go">GO!</string>
+    <string-array name="to_five">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="to_nine">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+    <string name="touch_here">Touch Here</string>
+    <string name="menu">MENU</string>
+    <string name="game_paused">SWITAP GAME PAUSED</string>
+    <string-array name="menu_options">
+        <item>CONTINUE</item>
+        <item>EXIT</item>
+    </string-array>
+    <string name="score">Score:</string>
+    <string name="zero">0</string>
+    <string name="colon">:</string>
+    <string name="title_activity_switap_launcher">SwiTapLauncher</string>
+    <string name="multiplayer">Multiplayer</string>
+    <string name="single_player">Single\nPlayer</string>
+    <string name="back">BACK</string>
+    <string name="ok">Ok</string>
+    <string name="invalid_time_warning">Time limit cannot be 0!</string>
+    <string name="invalid_name_warning">Player name cannot be blank!</string>
+    <string name="ready">READY</string>
+    <string name="won">won!</string>
+    <string name="tie">It\'s a tie!</string>
+    <string name="set">SET...</string>
+    <string name="game_over">Game Over</string>
+    <string name="swipe">SWIPE</string>
+    <string name="highscore">HIGHSCORES</string>
+    <string name="title_activity_single_player_launcher">SinglePlayerLauncher</string>
+    <string name="name">Name:</string>
+    <string name="OK">OK</string>
+    <string name="string_continue">CONTINUE</string>
+    <string name="save_continue">SAVE AND CONTINUE</string>
+    <string name="enter_name">New Highscore!\nEnter Name:</string>
+    <string name="no_name_warning">Name is blank.\nScore will not be saved.</string>
+    <string name="cancel">Cancel</string>
+    <string name="highscores">Highscores</string>
+</resources>
