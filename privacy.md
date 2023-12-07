@@ -1,9 +1,3 @@
---
-title: SwiTap
----
-
-# Privacy Policy
-
 We respect your privacy and are committed to protecting your personal information. We have developed this Privacy Policy to inform you of our policies regarding the collection, use, and disclosure of personal information we receive from users of our "SwiTap" Android application.
 
 ## Information Collection and Use
